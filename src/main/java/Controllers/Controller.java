@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
 
-    //Her kaldes calculateDay-metoden, og afhængig af, hvad der returneres, returneres her en besked, der foræltter,
-    // om det er fredag.
+    //Her kaldes calculateDay-metoden, og afhængigt af, hvad denne metode returnerer, returneres en besked, der
+    // fortæller brugeren, om det er fredag.
     @GetMapping("/erdetfredag")
     public String erdetfredag() {
         int day = CalculateDay.calculateDay();
@@ -22,5 +22,4 @@ public class Controller {
             return "Det er ikke fredag i dag";
         }
     }
-
 }

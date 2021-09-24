@@ -7,7 +7,7 @@ public class CalculateDay {
 
     public static int calculateDay() {
 
-        //Først bestemmer jeg datoen, måndeden og året og gemmer dem som int-variabler.
+        //Først bestemmer jeg datoen, måneden og året og gemmer dem som int-variabler.
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd");
         LocalDateTime currentDate = LocalDateTime.now();
         int date =Integer.parseInt(dtf.format(currentDate));
